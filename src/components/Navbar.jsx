@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import csdIcon from '../assets/images/csd_transparent.png';
 
 export default function Navbar() {
   return (
@@ -20,6 +21,8 @@ export default function Navbar() {
           <a href="#" className="hover:underline flex items-center gap-3">
             Terms of Service
             <ExternalLink className="w-4 h-4 text-white" />
+            {/* Use the local image */}
+            <img src={csdIcon} alt="CSD Icon" className="w-5 h-5" />
           </a>
         </div>
       </div>
