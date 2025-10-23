@@ -1,9 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 text-white py-4 text-sm mt-8">
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <footer className="bg-slate-800 text-white py-6 text-sm mt-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-4 md:gap-0">
+        
         {/* Left */}
-        <div>
+        <div className="text-center md:text-left">
           <p className="font-medium">Module Designer</p>
           <p>Arya Shedbal</p>
         </div>
@@ -15,7 +16,7 @@ export default function Footer() {
         </div>
 
         {/* Right */}
-        <div className="text-right">
+        <div className="text-center md:text-right">
           <p>IRIS © NITK Surathkal 2025</p>
         </div>
       </div>
