@@ -10,7 +10,7 @@ export default function Footer() {
 
         {/* Center */}
         <div className="text-center">
-          <p className="font-medium">Support:</p>
+          <p className="font-medium">Support</p>
           <p>officers@iris.nitk.ac.in</p>
         </div>
 
