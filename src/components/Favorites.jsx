@@ -15,19 +15,19 @@ export default function Favorites() {
       <div className="p-4 flex justify-around items-center">
         {/* Timetable */}
         <div className="flex flex-col items-center">
-          <Calendar className="text-blue-500 w-12 h-12" />
+          <Calendar className="text-gray-500 w-12 h-12" />
           <span className="mt-2 text-sm font-medium">Timetable</span>
         </div>
 
         {/* Course Activities */}
         <div className="flex flex-col items-center">
-          <Book className="text-green-500 w-12 h-12" />
+          <Book className="text-gray-500 w-12 h-12" />
           <span className="mt-2 text-sm font-medium">Course Activities</span>
         </div>
 
         {/* Add Favorite */}
         <div className="flex flex-col items-center">
-          <Plus className="text-red-500 w-16 h-16" />
+          <Plus className="text-gray-500 w-12 h-12" />
           <span className="mt-2 text-sm font-medium">Add Favorite</span>
         </div>
       </div>
