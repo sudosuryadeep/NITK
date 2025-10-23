@@ -7,12 +7,12 @@ export default function Announcement() {
     },
     {
       text: "Happy Deepavali to all!",
-      date: "12 November 2025",
+      date: "21 October 2025",
       resource: "visit resource",
     },
     {
       text: "NITK to scrap 75% attendance policy.",
-      date: "20 October 2025",
+      date: "7 October 2025",
       resource: "visit resource",
     },
   ];
