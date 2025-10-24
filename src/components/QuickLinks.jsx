@@ -17,7 +17,7 @@ export default function QuickLinks() {
           <img
             src="https://moodle.org/theme/moodleorg/pix/moodle_logo_TM.svg"
             alt="Moodle"
-            className="w-12 h-12"
+            className="w-18 h-18"
           />
         </div>
 
