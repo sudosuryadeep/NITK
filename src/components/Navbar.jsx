@@ -1,46 +1,44 @@
-import { ExternalLink, Menu, X } from "lucide-react";
+import { ExternalLink, Menu, X, Bell } from "lucide-react";
 import { useState } from "react";
+import csdIcon from '../assets/csd_transparent.png';
+import irisLogo from '../assets/iris_logo.png';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="w-full">
-      {/* Top strip */}
+      {/* Top Strip */}
       <div className="bg-[#233953] w-full h-10 flex items-center justify-between px-4 md:px-8 text-white text-sm">
-        {/* Left side */}
-        <div className="flex items-center gap-6">
-          <a href="#" className="hover:underline">
-            About IRIS
-          </a>
-          <a href="#" className="hover:underline">
-            IRIS Blog
-          </a>
+        {/* Left Links */}
+        <div className="flex items-center gap-4 md:gap-6">
+          <a href="#" className="hover:underline">About IRIS</a>
+          <a href="#" className="hover:underline">IRIS Blog</a>
         </div>
 
-        {/* Right side */}
-        <div className="hidden md:flex items-center gap-6">
+        {/* Right Links */}
+        <div className="hidden md:flex items-center gap-4">
           <a href="#" className="hover:underline flex items-center gap-1">
             Terms of Service
             <ExternalLink className="w-4 h-4 text-white" />
+            <img src={csdIcon} alt="CSD Icon" className="w-5 h-5" />
           </a>
         </div>
       </div>
 
       {/* Main Navbar */}
       <nav className="bg-white shadow px-4 md:px-8 py-3 flex items-center justify-between">
-        {/* Left: IRIS + NITK Logo + Name */}
+        {/* Left: Logos + Name */}
         <div className="flex items-center gap-3 md:gap-4">
-          <div className="bg-[#6770D2] text-white px-3 py-1.5 rounded-md font-bold tracking-widest text-lg">
-            I R I S
-          </div>
+          {/* IRIS Logo */}
+          <img src={irisLogo} alt="IRIS Logo" className="w-18 h-12 object-contain rounded-md" />
 
-          <img
-            src="https://upload.wikimedia.org/wikipedia/en/c/cc/NITK_Emblem.png"
-            alt="NITK Emblem"
-            className="w-8 h-8 object-contain"
-          />
+          {/* NITK Logo */}
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/NITK_Emblem.png"
+               alt="NITK Emblem"
+               className="w-8 h-8 object-contain" />
 
+          {/* Full Name */}
           <h1 className="hidden md:block font-semibold text-gray-700 text-lg">
             National Institute of Technology Karnataka, Surathkal
           </h1>
@@ -48,14 +46,17 @@ export default function Navbar() {
 
         {/* Right: Icons + Hamburger */}
         <div className="flex items-center gap-3 md:gap-5">
-          <button className="text-gray-600 hover:text-blue-600 text-xl">🔔</button>
-          <img
-            src="https://randomuser.me/api/portraits/men/78.jpg"
-            alt="User"
-            className="rounded-full border w-8 h-8"
-          />
+          {/* Bell Icon */}
+          <button className="text-gray-600 hover:text-blue-600 w-6 h-6 cursor-pointer">
+            <Bell />
+          </button>
 
-          {/* Hamburger for mobile */}
+          {/* Profile Image */}
+          <img src="https://randomuser.me/api/portraits/men/78.jpg"
+               alt="User"
+               className="rounded-full border w-8 h-8" />
+
+          {/* Hamburger Menu */}
           <button
             className="md:hidden text-gray-600"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -65,18 +66,15 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md px-4 py-3 flex flex-col gap-3">
-          <a href="#" className="hover:underline">
-            About IRIS
-          </a>
-          <a href="#" className="hover:underline">
-            IRIS Blog
-          </a>
+          <a href="#" className="hover:underline">About IRIS</a>
+          <a href="#" className="hover:underline">IRIS Blog</a>
           <a href="#" className="hover:underline flex items-center gap-1">
             Terms of Service
             <ExternalLink className="w-4 h-4" />
+            <img src={csdIcon} alt="CSD Icon" className="w-5 h-5" />
           </a>
         </div>
       )}
