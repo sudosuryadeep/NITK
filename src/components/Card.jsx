@@ -11,7 +11,7 @@ export default function Card({ title, code, progress }) {
     <div className="bg-white rounded-xl shadow p-4 relative">
       {/* Logo top-right */}
       <img
-        src="https://moodle.org/theme/moodleorg/pix/moodle_logo_TM.svg"
+        src="https://img.icons8.com/?size=512&id=39910&format=png"
         alt="Logo"
         className="absolute top-4 right-4 w-8 h-8 object-contain"
       />
