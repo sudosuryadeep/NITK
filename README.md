@@ -1,16 +1,35 @@
-# React + Vite
+# 🏫 NITK IRIS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web-based replica of the **IRIS Portal** of the **National Institute of Technology Karnataka (NITK), Surathkal** — designed to provide students with an intuitive and interactive dashboard experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+This project aims to recreate the **IRIS student portal** using modern web technologies such as **React**, **Tailwind CSS**, and **Vite**.  
+It displays essential academic information, announcements, quick links, and course details in a clean, responsive interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-  **Search Bar** – Quickly find courses, announcements, or links.  
+-  **Notification (Bell Icon)** – Displays new updates and announcements.  
+-  **Student Dashboard** – Shows CGPA, credits, and attendance for each course.  
+-  **Announcements Section** – Displays recent updates and events from NITK.  
+-  **Quick Links** – Access important portals like Moodle and NITK main site.  
+-  **Favorites** – Shortcut access to your most-used resources.  
+-  **Fully Responsive** – Works seamlessly across devices.
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| **React.js** | Frontend Framework |
+| **Vite** | Development & Build Tool |
+| **Tailwind CSS** | Styling |
+| **Lucide-React** | Icons (e.g., Bell, Search, etc.) |
+
+---
